@@ -45,6 +45,6 @@ chmod +x /etc/init.d/ibm_pciinfo_provider_autorun.sh 并检查该文件。
 
 **5.** 在编译中可能会出现的问题，编译之前需要先修改下文件，oss/sfcb/src/cmpift.h中需要将669行的函数注释掉。
 
----
-
 **6.** 编译完成之后，可以直接替换掉.so文件即可，路径为/build/stage/usr/lib/cim/libpciinfoprovider.so,然后重启下sfcb服务即可
+
+---
