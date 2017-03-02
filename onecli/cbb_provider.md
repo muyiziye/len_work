@@ -12,7 +12,7 @@ title: cbb provider 编译
 路径为：\\10.240.196.116\Data\SharedFolder\wangliang13\Virtual Machines\
 
  - 创建VMWare ESXi Workbench环境
-打开VMware Workstation，open a Virtual Machine，选中VMWare ESXi 5.5中后缀为.vmx的文件，此时已经开启了一个新的虚拟环境。
+打开VMware Workstation，open a Virtual Machine，选中VMWare ESXi 5.5中后缀为.vmx的文件，此时已经开启了一个新的虚拟环境。用户名密码:root vmware
 
 **2.** 编译代码
 
