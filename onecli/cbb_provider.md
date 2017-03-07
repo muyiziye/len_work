@@ -22,6 +22,8 @@ title: cbb provider 编译
 
  - 生成的provider文件为：./build/vib/vmware-esx-provider-pciinfo.vib
 
+**3.** 发送出去之前需要给vib文件进行签名，使用命令vibauthor -s -v build/vib/vmware-esx-provider-pciinfo.vib -k /opt/vmware/vibtools/testcerts/accepted.key -r /opt/vmware/vibtools/testcerts/accepted.cert，其中只需要将vib文件替换为需要的即可。
+
 **4.** 调试
 
   - 将文件vmware-esx-provider-pciinfo.vib 上传至目标ESXi的环境
