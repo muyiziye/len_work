@@ -42,8 +42,7 @@ title: cbb provider 编译
   - /etc/init.d/sfcbd-watchdog start 
 
     Notes:
-    1) 在安装过程中出现ibm_pciinfo_provider_autorun.sh这个脚本没有运行权限或者格式不对，可试着
-    chmod +x /etc/init.d/ibm_pciinfo_provider_autorun.sh 并检查该文件。
+    1) 在安装过程中出现ibm_pciinfo_provider_autorun.sh这个脚本没有运行权限或者格式不对，可以将该文件删除在安装。
 
 **5.** pciinfo工作流程简介
 
