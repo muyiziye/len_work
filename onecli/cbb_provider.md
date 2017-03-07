@@ -22,7 +22,13 @@ title: cbb provider 编译
 
  - 生成的provider文件为：./build/vib/vmware-esx-provider-pciinfo.vib
 
-**3.** 发送出去之前需要给vib文件进行签名，使用命令vibauthor -s -v build/vib/vmware-esx-provider-pciinfo.vib -k /opt/vmware/vibtools/testcerts/accepted.key -r /opt/vmware/vibtools/testcerts/accepted.cert，其中只需要将vib文件替换为需要的即可。
+**3.** 签名
+
+  - 发送出去之前需要给vib文件进行签名，使用命令
+
+  - vibauthor -s -v build/vib/vmware-esx-provider-pciinfo.vib -k /opt/vmware/vibtools/testcerts/accepted.key -r /opt/vmware- /vibtools/testcerts/accepted.cert，
+
+  - 其中只需要将vib文件替换为需要的即可。
 
 **4.** 调试
 
@@ -35,18 +41,18 @@ title: cbb provider 编译
 
   - /etc/init.d/sfcbd-watchdog start 
 
-Notes:
-1) 在安装过程中出现ibm_pciinfo_provider_autorun.sh这个脚本没有运行权限或者格式不对，可试着
-chmod +x /etc/init.d/ibm_pciinfo_provider_autorun.sh 并检查该文件。
+    Notes:
+    1) 在安装过程中出现ibm_pciinfo_provider_autorun.sh这个脚本没有运行权限或者格式不对，可试着
+    chmod +x /etc/init.d/ibm_pciinfo_provider_autorun.sh 并检查该文件。
 
-**4.** pciinfo工作流程简介
+**5.** pciinfo工作流程简介
 
  - lspci 此命令是用来显示系统中所有PCI总线设备或连接到总线上的所有设备的工具。
 
  - esxcli hardware pci list,该命令是用来列出在此host上面的所有的Pci设备的。具体可以参照文档 [exscli](http://pubs.vmware.com/vsphere-51/index.jsp?topic=%2Fcom.vmware.vcli.ref.doc%2Fesxcli_hardware.html)
 
-**5.** 在编译中可能会出现的问题，编译之前需要先修改下文件，oss/sfcb/src/cmpift.h中需要将669行的函数注释掉。
+**6.** 在编译中可能会出现的问题，编译之前需要先修改下文件，oss/sfcb/src/cmpift.h中需要将669行的函数注释掉。
 
-**6.** 编译完成之后，可以直接替换掉.so文件即可，路径为/build/stage/usr/lib/cim/libpciinfoprovider.so,然后重启下sfcb服务即可
+**7.** 编译完成之后，可以直接替换掉.so文件即可，路径为/build/stage/usr/lib/cim/libpciinfoprovider.so,然后重启下sfcb服务即可
 
 ---
