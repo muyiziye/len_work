@@ -1,5 +1,4 @@
-tags: 
-title: ESXi Defects Handling
+### 处理Esxi的defect
 
 If you have a VMWare ESXi defect and to be transferred to ESXi team, whose owner now is lisa(lixia lx2 hu), this is the routing:
 
