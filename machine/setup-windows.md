@@ -7,11 +7,11 @@
 
   - 更新IMM的方式有三种：
     
-    > 1. 使用web端来更新。
+    > a. 使用web端来更新。
 
-    > 2. 使用OneCli来更新，命令如下 OneCli.exe update flash --imm USERID:PASSW0RD@10.240.198.38 --sftp root:SYS2009health@10.240.197.107/home/liuyang/tmp/ --scope individual --includeid lnvgy_fw_uefi_tee103n-1.00_anyos_32-64 --forceid all --dir E:\fw\Electron --output getIMMMTout --log 5
+    > b. 使用OneCli来更新，命令如下 OneCli.exe update flash --imm USERID:PASSW0RD@10.240.198.38 --sftp root:SYS2009health@10.240.197.107/home/liuyang/tmp/ --scope individual --includeid lnvgy_fw_uefi_tee103n-1.00_anyos_32-64 --forceid all --dir E:\fw\Electron --output getIMMMTout --log 5
 
-    > 3. 找专门的刷的工具，目前我没有用过。
+    > c. 找专门的刷的工具，目前我没有用过。
 
   - 更新UEFI, 跟IMM一样。但是需要注意的是在刷UEFI的时候，不要让机器处于uefi状态，要么关掉os，要么是在os里面。
 
@@ -19,6 +19,9 @@
 
 **2.** 安装windows
 
-  - 需要下载windows的iso包，可以从116服务器上面找，然后使用工具做成U盘启动盘。
+  - 需要下载windows的iso包，可以从 \\10.240.196.116\Windows OS\Win2016 上面找，key在后面的文件中，然后使用工具做成U盘启动盘，注意不要使用preview版本的，因为preview的版本会在一段时间后过期，然后系统就会不时重启，最终不能使用。
 
-  
+**3.** 
+
+  - 需要下载linux的iso包，可以从 \\10.240.196.116\Linux OS 上面找，使用工具做成U盘启动盘。
+
